@@ -64,7 +64,6 @@ const quizTopics = [
   "språk & grammatik",
   "sport",
   "teknik",
-  "trafikkunskap"
 ]
 
 const questions = ref(null)
@@ -90,25 +89,26 @@ const start = async () => {
   loading.value = true
 
   const subjects = quizTopics.toSorted(() => Math.random() - 0.5).slice(0, 16)
+  console.log(subjects)
   subject = subjects.pop()
 
   const input = `
     Generera 15 allmänbildningsfrågor, en för varje ämne i listan: ${subjects.join(", ")}.
-    Varje fråga ska ha 4 svarsalternativ där ett svar är korrekt.
+    Varje fråga ska ha 4 svarsalternativ, varav ett är korrekt.
+    Inled inte frågorna med siffror, bokstäver eller ämnesnamn.
 
     Frågorna ska vara uppdelade i fyra svårighetsgrader:
-    - Fråga 1–5: Lätta – frågor om allmänt kända fakta som de flesta vuxna känner till.
-    - Fråga 6–10: Medelsvåra – kräver viss skolkunskap eller generell läsförståelse.
-    - Fråga 11–14: Svåra – kräver specifik kunskap eller intresse inom området.
-    - Fråga 15: Mycket svår – fråga som utmanar även kunniga personer.
+    • Lätta (Fråga 1–5): Frågor om allmänt kända fakta som de flesta vuxna känner till.
+    • Medelsvåra (Fråga 6–10): Kräver viss skolkunskap.
+    • Svåra (Fråga 11–14): Kräver specifik kunskap inom ämnet eller ett starkt intresse.
+    • Mycket svår (Fråga 15): Ska vara en riktig utmaning, även för välutbildade och kunniga personer.
 
-    Se till att svårighetsgraden ökar tydligt för varje sektion.
+    Se till att svårighetsgraden ökar tydligt mellan varje nivå.
   `
-
-  console.log(subjects)
 
   const response = await openai.responses.parse({
     model: "gpt-4.1",
+    temperature: 1.2,
     input,
     text: {
       format: zodTextFormat(Quiz, "quiz"),
@@ -207,7 +207,7 @@ async function changeQuestion() {
     },
   })
 
-  console.log(newSubject)
+  console.log(subject)
 
   Object.assign(questions.value[index.value], output_parsed, { subject })
 }
