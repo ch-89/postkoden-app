@@ -1,0 +1,97 @@
+[
+  {
+    "text": "What color is the sky on a clear day?",
+    "options": ["Blue", "Green", "Red", "Yellow"],
+    "answer": "Blue",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many legs does a spider have?",
+    "options": ["6", "8", "10", "12"],
+    "answer": "8",
+    "difficulty": "easy"
+  },
+  {
+    "text": "What is the capital of France?",
+    "options": ["Madrid", "Berlin", "Paris", "Rome"],
+    "answer": "Paris",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which fruit is typically yellow and curved?",
+    "options": ["Apple", "Banana", "Orange", "Grape"],
+    "answer": "Banana",
+    "difficulty": "easy"
+  },
+  {
+    "text": "How many days are there in a week?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "7",
+    "difficulty": "easy"
+  },
+  {
+    "text": "Which planet is known as the Red Planet?",
+    "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "answer": "Mars",
+    "difficulty": "medium"
+  },
+  {
+    "text": "What is the largest mammal on Earth?",
+    "options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+    "answer": "Blue Whale",
+    "difficulty": "medium"
+  },
+  {
+    "text": "Which gas do plants use for photosynthesis?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "answer": "Carbon Dioxide",
+    "difficulty": "medium"
+  },
+  {
+    "text": "Who wrote 'Romeo and Juliet'?",
+    "options": [
+      "Charles Dickens",
+      "Mark Twain",
+      "William Shakespeare",
+      "Leo Tolstoy"
+    ],
+    "answer": "William Shakespeare",
+    "difficulty": "medium"
+  },
+  {
+    "text": "What is the square root of 81?",
+    "options": ["7", "8", "9", "10"],
+    "answer": "9",
+    "difficulty": "medium"
+  },
+  {
+    "text": "What year did the Berlin Wall fall?",
+    "options": ["1985", "1987", "1989", "1991"],
+    "answer": "1989",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the chemical symbol for gold?",
+    "options": ["Au", "Ag", "Pb", "Fe"],
+    "answer": "Au",
+    "difficulty": "hard"
+  },
+  {
+    "text": "Which Greek philosopher taught Alexander the Great?",
+    "options": ["Socrates", "Plato", "Aristotle", "Pythagoras"],
+    "answer": "Aristotle",
+    "difficulty": "hard"
+  },
+  {
+    "text": "In which country is the ancient city of Petra located?",
+    "options": ["Egypt", "Jordan", "Iraq", "Lebanon"],
+    "answer": "Jordan",
+    "difficulty": "hard"
+  },
+  {
+    "text": "What is the value of Planck's constant (h) to two decimal places in Js?",
+    "options": ["6.63×10⁻³⁴", "3.14×10⁻³⁴", "9.81×10⁻³⁴", "1.60×10⁻³⁴"],
+    "answer": "6.63×10⁻³⁴",
+    "difficulty": "very hard"
+  }
+]
